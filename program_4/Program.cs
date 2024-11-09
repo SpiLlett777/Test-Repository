@@ -82,5 +82,15 @@
             // Время погружения пропорционально глубине (1 минута на каждые 10 метров)
             return targetDepth / 10.0;
         }
+        public static double CalculateSafeDepth(double waterTemperature, int depthCapacity)
+        {
+            // Температура воды влияет на безопасную глубину
+            // Чем холоднее вода, тем глубже можно безопасно погружаться
+            double safetyFactor = waterTemperature < 10 ? 1.5 : (waterTemperature < 20 ? 1.2 : 1.0);
+
+            // Максимальная безопасная глубина
+            double safeDepth = depthCapacity * safetyFactor;
+            return safeDepth;
+        }
     }
 }
