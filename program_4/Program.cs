@@ -112,5 +112,24 @@
                     return 200;  // Для всех остальных типов лодок — 200 м
             }
         }
+        public static double CalculateSafeDepth(double waterTemperature, int depthCapacity, string submarineType)
+        {
+            // Температура воды влияет на безопасную глубину
+            double safetyFactor = waterTemperature < 10 ? 1.5 : (waterTemperature < 20 ? 1.2 : 1.0);
+
+            // Учитываем тип подводной лодки: например, для атомных лодок безопасность больше
+            if (submarineType == "Nuclear")
+            {
+                safetyFactor *= 1.3; // Для атомных лодок безопасная глубина увеличена на 30%
+            }
+            else if (submarineType == "Diesel")
+            {
+                safetyFactor *= 0.8; // Для дизельных лодок безопасная глубина уменьшена на 20%
+            }
+
+            // Максимальная безопасная глубина
+            double safeDepth = depthCapacity * safetyFactor;
+            return safeDepth;
+        }
     }
 }
