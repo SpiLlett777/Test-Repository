@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u0421\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u043E\u0439 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0433\u043E \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0435\u043D\u0438\u044F\\MyRepository\\program_4\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u0421\u0423\u0420\u041F\u041E\\MyRepository\\program_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9274F6A1-34AF-42D4-8F1C-B4AC62D91E0C}|program_4.csproj|c:\\users\\user\\desktop\\\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u043E\u0439 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0433\u043E \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0435\u043D\u0438\u044F\\myrepository\\program_4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9274F6A1-34AF-42D4-8F1C-B4AC62D91E0C}|program_4.csproj|c:\\users\\user\\desktop\\\u0441\u0443\u0440\u043F\u043E\\myrepository\\program_4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9274F6A1-34AF-42D4-8F1C-B4AC62D91E0C}|program_4.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0421\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u043E\u0439 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0433\u043E \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0435\u043D\u0438\u044F\\MyRepository\\program_4\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0421\u0423\u0420\u041F\u041E\\MyRepository\\program_4\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0421\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u043E\u0439 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0433\u043E \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0435\u043D\u0438\u044F\\MyRepository\\program_4\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0421\u0423\u0420\u041F\u041E\\MyRepository\\program_4\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAswFAAAAABAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAqwFIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T18:51:36.287Z",
               "EditorCaption": ""

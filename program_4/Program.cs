@@ -77,5 +77,10 @@
             result += $"Безопасны ли погружения >25 метров: {(IsWithinSafeDepth ? "Да" : "Нет")}\n"; // Новое сообщение о безопасной глубине
             return result;
         }
+        public double CalculateDiveTime(int targetDepth)
+        {
+            // Время погружения пропорционально глубине (1 минута на каждые 10 метров)
+            return targetDepth / 10.0;
+        }
     }
 }
