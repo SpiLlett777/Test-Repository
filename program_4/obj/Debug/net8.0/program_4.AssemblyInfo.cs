@@ -14,10 +14,9 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("program_4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01141631e2e0382f7a030e551f517a9d2f2573bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+586bc2cc678db6477a5121a8f246dbe06b7dfa37")]  // Оставляем актуальную версию
 [assembly: System.Reflection.AssemblyProductAttribute("program_4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("program_4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
-

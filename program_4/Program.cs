@@ -77,8 +77,9 @@
             result += $"Безопасны ли погружения >25 метров: {(IsWithinSafeDepth ? "Да" : "Нет")}\n"; // Новое сообщение о безопасной глубине
             return result;
         }
-        // Объединенный метод для расчета безопасной глубины с учетом температуры воды, глубины и типа подводной лодки
-        public static double CalculateSaыfeDepth(double waterTemperature, int depthCapacity, string submarineType)
+
+        // Метод для вычисления безопасной глубины с учетом температуры воды и типа подводной лодки
+        public static double CalculateSafeDepth(double waterTemperature, int depthCapacity, string submarineType)
         {
             // Температура воды влияет на безопасную глубину
             double safetyFactor = waterTemperature < 10 ? 1.5 : (waterTemperature < 20 ? 1.2 : 1.0);
@@ -96,6 +97,20 @@
             // Максимальная безопасная глубина
             double safeDepth = depthCapacity * safetyFactor;
             return safeDepth;
+        }
+
+        // Новый метод для вычисления оптимальной глубины в зависимости от типа подводной лодки
+        public int GetOptimalDiveDepth(string submarineType)
+        {
+            switch (submarineType.ToLower())
+            {
+                case "research":
+                    return 500;  // Для исследовательских лодок максимальная глубина 500 м
+                case "tourist":
+                    return 100;  // Для туристических лодок максимальная глубина 100 м
+                default:
+                    return 200;  // Для всех остальных типов лодок — 200 м
+            }
         }
     }
 }
