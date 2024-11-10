@@ -77,16 +77,21 @@
             result += $"Безопасны ли погружения >25 метров: {(IsWithinSafeDepth ? "Да" : "Нет")}\n"; // Новое сообщение о безопасной глубине
             return result;
         }
-        public double CalculateDiveTime(int targetDepth)
-        {
-            // Время погружения пропорционально глубине (1 минута на каждые 10 метров)
-            return targetDepth / 10.0;
-        }
-        public static double CalculateSafeDepth(double waterTemperature, int depthCapacity)
+        // Объединенный метод для расчета безопасной глубины с учетом температуры воды, глубины и типа подводной лодки
+        public static double CalculateSaыfeDepth(double waterTemperature, int depthCapacity, string submarineType)
         {
             // Температура воды влияет на безопасную глубину
-            // Чем холоднее вода, тем глубже можно безопасно погружаться
             double safetyFactor = waterTemperature < 10 ? 1.5 : (waterTemperature < 20 ? 1.2 : 1.0);
+
+            // Учитываем тип подводной лодки: например, для атомных лодок безопасность больше
+            if (submarineType == "Nuclear")
+            {
+                safetyFactor *= 1.3; // Для атомных лодок безопасная глубина увеличена на 30%
+            }
+            else if (submarineType == "Diesel")
+            {
+                safetyFactor *= 0.8; // Для дизельных лодок безопасная глубина уменьшена на 20%
+            }
 
             // Максимальная безопасная глубина
             double safeDepth = depthCapacity * safetyFactor;
