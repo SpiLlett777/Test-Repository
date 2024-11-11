@@ -125,8 +125,21 @@
         }
         public void DisplaySafetyStatus()
         {
+<<<<<<< HEAD
             Console.WriteLine($"Подводная лодка {SubmarineName}: глубина {DepthCapacity} м. " +
                               $"Безопасно ли погружение >25 метров: {(IsWithinSafeDepth ? "Да" : "Нет")}");
+=======
+            double typeFactor = submarineType.ToLower() == "research" ? 1.2 : 1.0;
+            double emergencyFactor = isEmergency ? 0.8 : 1.0;
+
+            // Предупреждение, если запас воздуха меньше определенного значения
+            if (airSupply < 10)
+            {
+                Console.WriteLine("Предупреждение: запас воздуха критически низок!");
+            }
+
+            return airSupply / (depthCapacity * 0.1 * typeFactor * emergencyFactor);
+>>>>>>> 9a46895 (Добавлена проверка на критический уровень запаса воздуха в метод CalculateRemainingAirTime)
         }
     }
 }
