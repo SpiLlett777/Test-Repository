@@ -123,5 +123,10 @@
             // Время подъема пропорционально глубине, но в два раза быстрее, чем погружение
             return targetDepth / 20.0;
         }
+        public void DisplaySafetyStatus()
+        {
+            Console.WriteLine($"Подводная лодка {SubmarineName}: глубина {DepthCapacity} м. " +
+                              $"Безопасно ли погружение >25 метров: {(IsWithinSafeDepth ? "Да" : "Нет")}");
+        }
     }
 }
