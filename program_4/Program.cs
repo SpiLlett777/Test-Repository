@@ -57,7 +57,17 @@
             CaptainName = captainName;
             DepthCapacity = depthCapacity;
         }
+        public double CalculateFuelConsumption(double speed, bool isHighEfficiencyMode)
+        {
+            // Основной расход топлива на каждый метр погружения
+            double baseConsumption = depthCapacity * 0.05;
+            // Коррекция расхода в зависимости от скорости
+            double speedFactor = speed < 10 ? 1.0 : 1.2;
+            // Эффективный режим экономит топливо
+            double efficiencyFactor = isHighEfficiencyMode ? 0.85 : 1.0;
 
+            return baseConsumption * speedFactor * efficiencyFactor;
+        }
         public string GetInfo()
         {
             return $"Название подводной лодки: {SubmarineName}\n" +
